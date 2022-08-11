@@ -31,7 +31,7 @@ export default function  ButtonImageContainer({ Image, sDescription, amountFetch
                     }}
                 dispatch(data)
             })
-            .catch(err => console.error( err, ));
+            .catch(err => console.error( err, 'frontend'));
         }
         else {
             const data = {
