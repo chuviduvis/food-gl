@@ -13,7 +13,7 @@ export default function  ButtonImageContainer({ Image, sDescription, amountFetch
 
     const FetchData =()=>{
         if (state.GLfetch === 0){
-            fetch(`http://localhost:8000/${Image}`, options)
+            fetch(`/${Image}`, options)
             .then(response => {
                 console.log(typeof(response))
                 return response.json()})
