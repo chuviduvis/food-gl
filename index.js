@@ -9,7 +9,7 @@ const  bodyParser = require('body-parser')
 app.use(cors())
 app.use(bodyParser.json())
 
-app.post('/*', (request, res) => {
+app.post('https://food-gl.vercel.app/*', (request, res) => {
 
     const Body =  JSON.stringify(request.body)
     const options = {
