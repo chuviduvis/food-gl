@@ -13,7 +13,7 @@ export default function  ButtonImageContainer({ Image, sDescription, amountFetch
 
     const FetchData =()=>{
         if (state.GLfetch === 0){
-            fetch(`/${Image}`, options)
+            fetch(`https://food-gl.vercel.app//${Image}`, options)
             .then(response => {
                 console.log(typeof(response))
                 return response.json()})
